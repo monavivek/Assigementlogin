@@ -49,6 +49,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/mobile"
+                android:maxLength="10"
                 android:inputType="phone" />
         </android.support.design.widget.TextInputLayout>
 

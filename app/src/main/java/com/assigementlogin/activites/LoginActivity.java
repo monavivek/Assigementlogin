@@ -1,12 +1,14 @@
 package com.assigementlogin.activites;
 
 import android.content.Intent;
+import android.graphics.LinearGradient;
 import android.os.Bundle;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Html;
 import android.text.Spanned;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +17,7 @@ import android.widget.TextView;
 
 import com.assigementlogin.R;
 import com.assigementlogin.model.User;
+import com.assigementlogin.storage.SessionManager;
 import com.assigementlogin.storage.SqliteHelper;
 
 public class LoginActivity extends AppCompatActivity {
@@ -32,15 +35,23 @@ public class LoginActivity extends AppCompatActivity {
 
     //Declaration SqliteHelper
     SqliteHelper sqliteHelper;
-
+    private SessionManager session;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        sqliteHelper = new SqliteHelper(this);
+        sqliteHelper = new SqliteHelper(LoginActivity.this);
+        session = new SessionManager(LoginActivity.this);
         initCreateAccountTextView();
         initViews();
-
+        // Check if user is already logged in or not
+        if (session.isLoggedIn()) {
+            //Log.e("session ", String.valueOf(session.isLoggedIn()));
+            // User is already logged in. Take him to main activity
+            Intent intent = new Intent(LoginActivity.this, DashBoardActivity.class);
+            startActivity(intent);
+           finish();
+        }
         //set click event of login button
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,11 +70,11 @@ public class LoginActivity extends AppCompatActivity {
                     //Check Authentication is successful or not
                     if (currentUser != null) {
                         Snackbar.make(buttonLogin, "Successfully Logged in!", Snackbar.LENGTH_LONG).show();
-
+                        session.setLogin(true);//keep maintain session
                         //User Logged in Successfully Launch You home screen activity
-                       /* Intent intent=new Intent(LoginActivity.this,HomeScreenActivity.class);
+                        Intent intent=new Intent(LoginActivity.this,DashBoardActivity.class);
                         startActivity(intent);
-                        finish();*/
+                        finish();
                     } else {
 
                         //User Logged in Failed

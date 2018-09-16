@@ -29,7 +29,7 @@
             android:theme="@style/AppTheme" />
         <activity android:name=".activites.DashBoardActivity" />
         <activity android:name=".activites.product.ProductMasterActivity" />
-        <activity android:name=".activites.product.ProductMasterListActivity"></activity>
+        <activity android:name=".activites.product.ProductMasterListActivity" />
     </application>
 
 </manifest>

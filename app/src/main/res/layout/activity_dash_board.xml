@@ -6,10 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".activites.DashBoardActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:layout_alignParentTop="true"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_margin="20dp"
+        android:layout_below="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -37,7 +45,20 @@
             android:layout_below="@+id/product_master"
             android:drawableLeft="@drawable/ic_product"
             tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/logout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@android:color/white"
+            android:background="@color/colorPrimaryDark"
+            android:text="Logout" />
     </LinearLayout>
+
+
 
 
 </RelativeLayout>

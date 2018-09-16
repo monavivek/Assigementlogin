@@ -22,7 +22,7 @@ public class SessionManager {
     private static final String PREF_NAME = "AssigementLogin";
 
     private static final String KEY_IS_LOGGEDIN = "isLoggedIn";
-
+    private static SessionManager  sessionManager;
     public SessionManager(Context context) {
         this._context = context;
         pref = _context.getSharedPreferences(PREF_NAME, PRIVATE_MODE);
