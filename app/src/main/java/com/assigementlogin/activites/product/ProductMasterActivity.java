@@ -1,13 +1,15 @@
-package com.assigementlogin;
+package com.assigementlogin.activites.product;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import com.assigementlogin.R;
+
+public class ProductMasterActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_product_master);
     }
 }

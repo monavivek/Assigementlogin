@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activites.DashBoardActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/product_master"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Master"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentTop="true"
+            android:drawableLeft="@drawable/ic_product"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/product_master_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Product Master List"
+            android:gravity="left"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/product_master"
+            android:drawableLeft="@drawable/ic_product"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+
+</RelativeLayout>

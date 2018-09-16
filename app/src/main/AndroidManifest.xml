@@ -9,13 +9,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".activites.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activites.RegisterActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activites.LoginActivity"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".activites.DashBoardActivity" />
+        <activity android:name=".activites.product.ProductMasterActivity" />
+        <activity android:name=".activites.product.ProductMasterListActivity"></activity>
     </application>
 
 </manifest>
