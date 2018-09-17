@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#4caf50</color>
-    <color name="colorPrimaryDark">#357a38</color>
-    <color name="colorAccent">#ff1744</color>
+    <color name="colorPrimary">#82caf1</color>
+    <color name="colorPrimaryDark">#6cbae4</color>
+    <color name="colorAccent">#ff17ff</color>
+    <color name="colorBack">#ff1744</color>
+    <color name="msg_no_notes">#999</color>
+    <color name="hint_enter_note">#89c3c3c3</color>
+    <color name="timestamp">#858585</color>
+    <color name="note_list_text">#232323</color>
 </resources>

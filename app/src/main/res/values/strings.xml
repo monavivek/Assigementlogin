@@ -9,4 +9,13 @@
     <string name="back_to_login">Back to Login</string>
     <string name="title_activity_splash">SplashActivity</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="firstname">FirstName</string>
+    <string name="lastname">LastName</string>
+    <string name="email">Email</string>
+    <string name="confimpassword">Confirm Password</string>
+    <string name="productcode">Enter Product Code</string>
+    <string name="productname">Enter Product Name</string>
+    <string name="units">Enter Product Units</string>
+    <string name="mrp">Enter Product MRP</string>
+    <string name="productmaster">Create Pruduct</string>
 </resources>

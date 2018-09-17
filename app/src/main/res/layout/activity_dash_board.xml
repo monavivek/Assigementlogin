@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activites.DashBoardActivity">
+    tools:context=".activites.user.DashBoardActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -21,38 +21,45 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <TextView
+        <android.support.v7.widget.AppCompatButton
             android:id="@+id/product_master"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:padding="15dp"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="5dp"
             android:text="Product Master"
             android:gravity="left"
             android:textSize="20sp"
-            android:layout_marginTop="5dp"
             android:layout_alignParentTop="true"
             android:drawableLeft="@drawable/ic_product"
             tools:ignore="MissingConstraints" />
 
 
-        <TextView
+        <android.support.v7.widget.AppCompatButton
             android:id="@+id/product_master_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:padding="15dp"
+            android:drawablePadding="8dp"
+            android:layout_marginTop="5dp"
             android:text="Product Master List"
             android:gravity="left"
             android:textSize="20sp"
-            android:layout_marginTop="5dp"
+
             android:layout_below="@+id/product_master"
             android:drawableLeft="@drawable/ic_product"
             tools:ignore="MissingConstraints" />
 
-        <Button
+        <android.support.v7.widget.AppCompatButton
             android:id="@+id/logout_btn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="10dp"
             android:textColor="@android:color/white"
             android:background="@color/colorPrimaryDark"
             android:text="Logout" />

@@ -20,14 +20,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activites.RegisterActivity"
+            android:name=".activites.user.RegisterActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme" />
         <activity
-            android:name=".activites.LoginActivity"
+            android:name=".activites.user.LoginActivity"
             android:label="@string/title_activity_splash"
             android:theme="@style/AppTheme" />
-        <activity android:name=".activites.DashBoardActivity" />
+        <activity android:name=".activites.user.DashBoardActivity" />
         <activity android:name=".activites.product.ProductMasterActivity" />
         <activity android:name=".activites.product.ProductMasterListActivity" />
     </application>
